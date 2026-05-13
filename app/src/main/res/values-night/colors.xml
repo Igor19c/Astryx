@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="secondary">@color/white</color>
+
+    <color name="background">@color/deep_black</color>
+
+    <!-- Text colors -->
+    <color name="title">@color/secondary</color>
+    <color name="subtitle">@color/secondary</color>
+    <color name="body">@color/gray_light</color>
+    <color name="section_title">@color/gray_light</color>
+
+    <!-- Button colors -->
+    <color name="secondary_filled_btn">@color/secondary</color>
+    <color name="on_secondary_filled_btn">@color/background</color>
+    <color name="secondary_outlined_btn">@color/secondary</color>
+
+    <!-- Icon colors -->
+    <color name="icon">@color/secondary</color>
+
+    <!-- Chip colors -->
+    <color name="chip_stroke">@color/gray_light</color>
+    <color name="chip_fill">@color/transparent_white_20</color>
+
+    <!-- Text Input colors -->
+    <color name="text_input_hint">@color/gray_light</color>
+    <color name="text_input">@color/secondary</color>
+
+    <color name="divider">@color/transparent_white_20</color>
+
+    <color name="btn_nav_unselected">@color/gray_light</color>
+
+    <color name="explore_header_dot_inactive">@color/transparent_white_20</color>
+
+    <color name="tab_indicator_inactive">@color/transparent_white_20</color>
+
+    <color name="progress_bar_unfilled">@color/transparent_white_20</color>
+
+
+    <!-- App Logo colors -->
+    <color name="ic_launcher_background">@color/gray_muted</color>
+
+
+</resources>

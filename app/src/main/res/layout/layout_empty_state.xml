@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/empty_state_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:visibility="gone">
+
+    <ImageView
+        android:id="@+id/empty_state_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:alpha="0.4"
+        android:src="@drawable/ic_rocket"
+        app:tint="@color/icon" />
+
+    <TextView
+        android:id="@+id/empty_state_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="Ready for your first adventure?"
+        android:textColor="@color/title"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/empty_state_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Start planning your dream trip across the galaxy today!"
+        android:textColor="@color/body"
+        android:textSize="14sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/empty_state_btn"
+        style="@style/Widget.Material3.Button.IconButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_gradient"
+        android:elevation="4dp"
+        android:paddingHorizontal="24dp"
+        android:shadowColor="@color/transparent_black_60"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="10"
+        android:text="Explore Destinations"
+        android:textColor="@color/on_primary"
+        android:textSize="14sp"
+        app:backgroundTint="@null"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/ic_explore"
+        app:iconPadding="12dp"
+        app:iconSize="18dp"
+        app:iconTint="@color/on_primary" />
+
+
+</LinearLayout>

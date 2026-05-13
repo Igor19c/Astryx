@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="top"
+    android:orientation="horizontal"
+    android:paddingVertical="12dp">
+
+    <ImageView
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/ic_arrow_right"
+        app:tint="?attr/customColorPrimary" />
+
+
+    <TextView
+        android:id="@+id/bullet_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:lineSpacingExtra="3dp"
+        android:text="Highlights here"
+        android:textColor="@color/body"
+        android:textSize="14sp" />
+
+</LinearLayout>

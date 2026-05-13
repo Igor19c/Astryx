@@ -1,0 +1,95 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Astryx" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/space_purple</item>
+    </style>
+
+    <!-- Purple Theme (Default) -->
+    <style name="Theme.Astryx" parent="Base.Theme.Astryx">
+        <item name="colorPrimary">@color/space_purple</item>
+        <item name="customColorPrimary">@color/space_purple</item>
+        <item name="customColorPrimaryFaded">@color/space_purple_faded</item>
+        <item name="customColorPrimaryLight">@color/space_purple_light</item>
+        <item name="customColorPrimaryLightFaded">@color/space_purple_light_faded</item>
+        <item name="customColorPrimaryVariant">@color/space_pink</item>
+        <item name="customColorPrimaryVariantFaded">@color/space_pink_faded</item>
+    </style>
+
+    <!-- Blue Theme (Default) -->
+    <style name="Theme.Astryx.Blue" parent="Base.Theme.Astryx">
+        <item name="colorPrimary">@color/space_blue</item>
+        <item name="customColorPrimary">@color/space_blue</item>
+        <item name="customColorPrimaryFaded">@color/space_blue_faded</item>
+        <item name="customColorPrimaryLight">@color/space_blue_light</item>
+        <item name="customColorPrimaryLightFaded">@color/space_blue_light_faded</item>
+        <item name="customColorPrimaryVariant">@color/space_pink</item>
+        <item name="customColorPrimaryVariantFaded">@color/space_pink_faded</item>
+    </style>
+
+    <!-- Red Theme -->
+    <style name="Theme.Astryx.Red" parent="Base.Theme.Astryx">
+        <item name="colorPrimary">@color/accent_space_red</item>
+        <item name="customColorPrimary">@color/accent_space_red</item>
+        <item name="customColorPrimaryFaded">@color/space_red_faded</item>
+        <item name="customColorPrimaryLight">@color/space_red_light</item>
+        <item name="customColorPrimaryLightFaded">@color/space_red_light_faded</item>
+        <item name="customColorPrimaryVariant">@color/space_cyan</item>
+        <item name="customColorPrimaryVariantFaded">@color/space_cyan_faded</item>
+    </style>
+
+    <!-- Green Theme -->
+    <style name="Theme.Astryx.Green" parent="Base.Theme.Astryx">
+        <item name="colorPrimary">@color/space_green</item>
+        <item name="customColorPrimary">@color/space_green</item>
+        <item name="customColorPrimaryFaded">@color/space_green_faded</item>
+        <item name="customColorPrimaryLight">@color/space_green_light</item>
+        <item name="customColorPrimaryLightFaded">@color/space_green_light_faded</item>
+        <item name="customColorPrimaryVariant">@color/space_red_magenta</item>
+        <item name="customColorPrimaryVariantFaded">@color/space_red_magenta_faded</item>
+    </style>
+
+    <!-- FullScreen Theme -->
+    <style name="Theme.Astryx.FullScreen" parent="Theme.Astryx">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowLayoutInDisplayCutoutMode" tools:targetApi="o_mr1">shortEdges
+        </item>
+    </style>
+
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/deep_black</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/logo_splash</item>
+        <item name="windowSplashScreenAnimationDuration">1000</item>
+        <item name="postSplashScreenTheme">@style/Theme.Astryx</item>
+    </style>
+
+    <!-- Auth Theme (Specifically for FirebaseUI screens) -->
+    <style name="Theme.Astryx.Auth" parent="Theme.Astryx.FullScreen">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorOnPrimary">@color/deep_black</item>
+        <item name="colorSecondary">?attr/customColorPrimary</item>
+
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="colorAccent">?attr/customColorPrimary</item>
+
+        <item name="textInputStyle">@style/MyCustomAuthInputLayout</item>
+        <item name="editTextStyle">@style/MyCustomAuthEditText</item>
+    </style>
+
+    <style name="MyCustomAuthInputLayout" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+        <item name="boxStrokeColor">@color/space_purple</item>
+        <item name="android:layout_marginVertical">0dp</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="hintTextColor">@color/space_purple</item>
+    </style>
+
+    <style name="MyCustomAuthEditText" parent="Widget.Material3.TextInputEditText.OutlinedBox">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_marginVertical">0dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <RelativeLayout
+        android:id="@+id/main_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingTop="10dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/main_header_left_btn"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="12dp"
+            app:icon="@drawable/ic_settings"
+            app:iconSize="30dp"
+            app:iconTint="@color/icon" />
+
+        <FrameLayout
+            android:id="@+id/header_content_container"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/main_header_right_btn"
+            android:layout_toEndOf="@id/main_header_left_btn"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="6dp">
+
+            <LinearLayout
+                android:id="@+id/default_header_title_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/header_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/orbitron_bold"
+                    android:letterSpacing="0.1"
+                    android:text="ASTRYX"
+                    android:textAlignment="center"
+                    android:textColor="@color/title"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/custom_header_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/main_header_right_btn"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="12dp"
+            app:icon="@drawable/ic_search"
+            app:iconSize="35dp"
+            app:iconTint="@color/icon" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/nav_container"
+        android:layout_below="@+id/main_header">
+
+        <FrameLayout
+            android:id="@+id/main_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/nav_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/btn_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:paddingTop="5dp"
+            android:paddingBottom="8dp"
+            app:elevation="8dp"
+            app:itemActiveIndicatorStyle="@color/transparent"
+            app:itemIconTint="@color/nav_btn_tint"
+            app:itemTextColor="@color/nav_btn_tint"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bottom_nav_menu" />
+
+        <LinearLayout
+            android:id="@+id/home_btn_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-10dp"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:elevation="15dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/home_btn"
+                style="@style/Widget.Material3.Button.IconButton"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/bg_home_btn_gradient"
+                app:backgroundTint="@null"
+                app:icon="@drawable/ic_home_earth"
+                app:iconGravity="top"
+                app:iconSize="30dp"
+                app:iconTint="@color/on_primary" />
+
+            <TextView
+                android:id="@+id/home_btn_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Home"
+                android:textColor="@color/btn_nav_unselected"
+
+                android:textSize="12.5sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ASTRYX</string>
+    <string name="ac_indigo">Royal Indigo</string>
+    <string name="ac_blue">Stellar Blue</string>
+    <string name="ac_crimson">Deep Crimson</string>
+    <string name="ac_green">Emerald Green</string>
+
+</resources>

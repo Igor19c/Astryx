@@ -1,0 +1,22 @@
+*.iml
+.gradle
+/local.properties
+/.idea/
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+
+# Sensitive Firebase configuration
+google-services.json
+
+# Signing files
+*.jks
+*.keystore
+*.p12
+*.google.json
+
+# Local properties
+local.properties
+secrets.properties

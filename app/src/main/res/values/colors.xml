@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Palette (Base Colors) -->
+    <color name="space_blue">#457aff</color>
+    <color name="space_blue_faded">#48457AFF</color>
+    <color name="space_blue_light">#97B2FF</color>
+    <color name="space_blue_light_faded">#5097B2FF</color>
+
+    <color name="space_purple">#575AD3</color>
+    <color name="space_purple_faded">#48575AD3</color>
+    <color name="space_purple_light">#A0A0FF</color>
+    <color name="space_purple_light_faded">#30A0A0FF</color>
+    <color name="space_pink">#AE52D4</color>
+    <color name="space_pink_faded">#20AE52D4</color>
+
+    <color name="space_red">#B3261E</color>
+    <color name="space_red_faded">#50B3261E</color>
+    <color name="space_red_light">#E87367</color>
+    <color name="space_red_light_faded">#50E87367</color>
+    <color name="space_cyan">#1EABB3</color>
+    <color name="space_cyan_faded">#201EABB3</color>
+
+    <color name="space_green">#1EA65A</color>
+    <color name="space_green_faded">#481EA65A</color>
+    <color name="space_green_light">#62D79A</color>
+    <color name="space_green_light_faded">#5062D79A</color>
+    <color name="space_red_magenta">#A61E6A</color>
+    <color name="space_red_magenta_faded">#20A61E6A</color>
+
+    <color name="deep_black">#111213</color>
+    <color name="deep_silver">#7E333333</color>
+    <color name="silver_muted">#CC1A1A2E</color>
+    <color name="gray_muted">#D9242323</color>
+    <color name="gray_dark">#757575</color>
+    <color name="gray_light">#CCCCCC</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="orange_yellow">#FBC02D</color>
+    <color name="orange_yellow_faded">#50FBC02D</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="transparent_black_20">#33111213</color>
+    <color name="transparent_black_60">#9A111213</color>
+    <color name="transparent_black_80">#CD111213</color>
+    <color name="transparent_white_20">#33FFFFFF</color>
+    <color name="transparent_white_40">#66FFFFFF</color>
+    <color name="transparent_white_80">#CDFFFFFF</color>
+
+
+    <!-- Accent colors -->
+    <color name="accent_space_purple">@color/space_purple</color>
+    <color name="accent_space_blue">@color/space_blue</color>
+    <color name="accent_space_red">@color/space_red</color>
+    <color name="accent_space_green">@color/space_green</color>
+
+
+    <color name="on_primary">@color/white</color>
+
+    <color name="secondary">@color/deep_black</color>
+
+    <color name="alert">@color/space_red</color>
+    <color name="on_alert">@color/white</color>
+    <color name="alert_faded">@color/space_red_faded</color>
+    <color name="on_alert_faded">@color/white</color>
+    <color name="success">@color/space_green_light</color>
+    <color name="achievement">@color/orange_yellow</color>
+
+    <color name="background">@color/white</color>
+
+    <!-- Text colors -->
+    <color name="title">@color/secondary</color>
+    <color name="subtitle">@color/secondary</color>
+    <color name="body">@color/gray_dark</color>
+    <color name="section_title">@color/gray_muted</color>
+
+    <!-- Button colors -->
+    <color name="secondary_filled_btn">@color/secondary</color>
+    <color name="on_secondary_filled_btn">@color/background</color>
+    <color name="secondary_outlined_btn">@color/secondary</color>
+
+    <!-- Icon colors -->
+    <color name="icon">@color/secondary</color>
+
+    <!-- Toast message colors -->
+    <color name="toast_message_fill">@color/silver_muted</color>
+
+    <!-- Chip colors -->
+    <color name="chip_stroke">@color/deep_black</color>
+    <color name="chip_fill">@color/transparent_black_20</color>
+
+    <!-- Text Input colors -->
+    <color name="text_input_hint">@color/gray_dark</color>
+    <color name="text_input">@color/secondary</color>
+
+    <color name="divider">@color/transparent_black_20</color>
+
+    <color name="btn_nav_unselected">@color/gray_dark</color>
+
+    <color name="explore_header_dot_inactive">@color/transparent_black_20</color>
+
+    <color name="tab_indicator_inactive">@color/transparent_black_20</color>
+
+    <color name="progress_bar_unfilled">@color/transparent_black_20</color>
+
+    <!-- App Logo colors -->
+    <color name="ic_launcher_background">@color/gray_muted</color>
+
+</resources>
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Custom Color Attributes -->
+    <attr name="customColorPrimary" format="color" />
+    <attr name="customColorPrimaryFaded" format="color" />
+    <attr name="customColorPrimaryLight" format="color" />
+    <attr name="customColorPrimaryLightFaded" format="color" />
+    <attr name="customColorPrimaryVariant" format="color" />
+    <attr name="customColorPrimaryVariantFaded" format="color" />
+
+    <attr name="onCustomColorPrimary" format="color" />
+
+</resources>

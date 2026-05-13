@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="5dp">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/pic_post_fragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_home_earth" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_update_pic_post_fragment"
+                        style="@style/Widget.Material3.Button.IconButton.Filled"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|bottom"
+                        android:backgroundTint="?attr/customColorPrimary"
+                        android:padding="14dp"
+                        app:icon="@drawable/ic_edit"
+                        app:iconSize="18dp"
+                        app:iconTint="@color/on_primary"
+                        app:strokeWidth="0dp" />
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginVertical="36dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="Rate your trip"
+                        android:textColor="@color/title"
+                        android:textSize="12sp" />
+
+
+                    <RatingBar
+                        android:id="@+id/rating_bar_post_fragment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:progressBackgroundTint="?attr/customColorPrimaryLightFaded"
+                        android:progressTint="?attr/customColorPrimary"
+                        android:rating="4"
+                        android:stepSize="1" />
+
+                </LinearLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Post Title"
+                    android:textColorHint="@color/text_input_hint"
+                    app:boxStrokeColor="@color/text_input_stroke"
+                    app:cursorColor="?attr/customColorPrimary"
+                    app:hintTextColor="@color/text_input_hint">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/title_post_fragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_input"
+                        android:textColorHint="@color/text_input_hint" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:hint="Tell us about your trip"
+                    android:textColorHint="@color/text_input_hint"
+                    app:boxStrokeColor="@color/text_input_stroke"
+                    app:cursorColor="?attr/customColorPrimary"
+                    app:hintTextColor="@color/text_input_hint">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/description_post_fragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:gravity="top"
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/text_input"
+                        android:textColorHint="@color/text_input_hint" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_save_post_fragment"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="36dp"
+                android:backgroundTint="?attr/customColorPrimary"
+                android:elevation="3dp"
+                android:paddingVertical="12dp"
+                android:text="Share Post"
+                android:textColor="@color/on_primary"
+                android:textSize="14sp"
+                app:cornerRadius="16dp"
+                app:strokeWidth="0dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_cancel_post_fragment"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="24dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="36dp"
+                android:backgroundTint="@color/background"
+                android:elevation="3dp"
+                android:paddingVertical="12dp"
+                android:text="Cancel"
+                android:textColor="@color/title"
+                android:textSize="14sp"
+                app:cornerRadius="16dp"
+                app:strokeWidth="0dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="0dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/search_results_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/app_bar_search"
+            android:layout_marginTop="24dp"
+            tools:listitem="@layout/item_explore_search" />
+
+        <RelativeLayout
+            android:id="@+id/app_bar_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginTop="12dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/search_container"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="72dp"
+                app:cardBackgroundColor="@color/transparent"
+                app:cardCornerRadius="28dp"
+                app:cardElevation="0dp"
+                app:strokeColor="@color/text_input_stroke"
+                app:strokeWidth="1dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingHorizontal="16dp">
+
+                    <ImageView
+                        android:id="@+id/search_icon_trigger"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_search"
+                        app:tint="@color/icon" />
+
+                    <EditText
+                        android:id="@+id/search_input_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginHorizontal="12dp"
+                        android:layout_toStartOf="@+id/close_icon_trigger"
+                        android:layout_toEndOf="@+id/search_icon_trigger"
+                        android:background="@android:color/transparent"
+                        android:hint="Search Planets..."
+                        android:imeOptions="actionSearch"
+                        android:inputType="text"
+                        android:textColor="@color/title"
+                        android:textColorHint="@color/body"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/close_icon_trigger"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_close"
+                        android:visibility="gone"
+                        app:tint="@color/icon" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <FrameLayout
+                android:id="@+id/filter_root_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/filter_collapsed_trigger"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_gravity="end"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:cardBackgroundColor="@color/background"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="0dp"
+                    app:strokeColor="@color/text_input_stroke"
+                    app:strokeWidth="1dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_filter"
+                        app:tint="@color/icon" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <include
+                    android:id="@+id/filter_expanded_card"
+                    layout="@layout/layout_filter_explore_search"
+                    android:visibility="gone" />
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

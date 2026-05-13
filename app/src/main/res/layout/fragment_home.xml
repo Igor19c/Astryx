@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view_home_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/main_content_container_home_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="640dp"
+                android:backgroundTint="@color/white"
+                android:gravity="start"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image_header_home_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="580dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pic_home_header_moon" />
+
+                <TextView
+                    android:id="@+id/title_home_fragment"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="24dp"
+                    android:layout_marginTop="76dp"
+                    android:fontFamily="@font/orbitron_bold"
+                    android:letterSpacing="0.1"
+                    android:text="Journey Beyond Earth"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/title"
+                    android:textSize="32sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/subtitle_home_fragment"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/title_home_fragment"
+                    android:layout_marginHorizontal="24dp"
+                    android:layout_marginTop="160dp"
+                    android:lineSpacingExtra="4dp"
+                    android:text="Experience the cosmos like never before with Astryx"
+                    android:textAlignment="textStart"
+                    android:textStyle="normal"
+                    android:textColor="@color/secondary"
+                    android:textSize="18sp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_header_explore_home_fragment"
+                    style="@style/Widget.Material3.Button.IconButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/subtitle_home_fragment"
+                    android:layout_marginHorizontal="24dp"
+                    android:layout_marginTop="36dp"
+                    android:background="@drawable/bg_gradient"
+                    android:paddingHorizontal="14dp"
+                    android:text="Explore Now!"
+                    android:textColor="@color/on_primary"
+                    android:textSize="16sp"
+                    app:backgroundTint="@null"
+                    app:cornerRadius="12dp"
+                    app:icon="@drawable/ic_explore"
+                    app:iconGravity="textStart"
+                    app:iconPadding="6dp"
+                    app:iconSize="16dp"
+                    app:iconTint="@color/on_primary" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/highlights_container_home_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="12dp"
+                android:layout_marginTop="90dp"
+                android:layout_marginBottom="24dp"
+                android:baselineAligned="false"
+                android:gravity="top"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/highlights_explore_icon_home_fragment"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/ic_explore"
+                        app:tint="@color/icon" />
+
+                    <TextView
+                        android:id="@+id/highlights_explore_body_home_fragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Discover planets and destinations"
+                        android:textAlignment="center"
+                        android:textColor="@color/body"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/highlights_trip_icon_home_fragment"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/ic_trips"
+                        app:tint="@color/icon" />
+
+                    <TextView
+                        android:id="@+id/highlights_trip_body_home_fragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Plan your own routes"
+                        android:textAlignment="center"
+                        android:textColor="@color/body"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/highlights_save_icon_home_fragment"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/ic_star_outlined"
+                        app:tint="@color/icon" />
+
+                    <TextView
+                        android:id="@+id/highlights_save_body_home_fragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="Save favorite locations"
+                        android:textAlignment="center"
+                        android:textColor="@color/body"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Trending Destinations -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="128dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="24dp"
+                    android:layout_marginTop="12dp"
+                    android:text="Trending Destinations"
+                    android:textColor="@color/title"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="24dp"
+                    android:layout_marginTop="12dp"
+                    android:text="Most popular journeys this season"
+                    android:textColor="@color/body"
+                    android:textSize="16sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/trending_recycler_view_home_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36dp"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/item_trending_destination" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="120dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="48dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="24dp"
+                    android:text="Traveler Experiences"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/title"
+                    android:textSize="24sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="24dp"
+                    android:layout_marginTop="24dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/rating_star_container_home_fragment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/rating_star_01_home_fragment"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:src="@drawable/ic_rating_star_filled" />
+
+                        <ImageView
+                            android:id="@+id/rating_star_02_home_fragment"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:src="@drawable/ic_rating_star_filled" />
+
+                        <ImageView
+                            android:id="@+id/rating_star_03_home_fragment"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:src="@drawable/ic_rating_star_filled" />
+
+                        <ImageView
+                            android:id="@+id/rating_star_04_home_fragment"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:src="@drawable/ic_rating_star_filled" />
+
+                        <ImageView
+                            android:id="@+id/rating_star_05_home_fragment"
+                            android:layout_width="28dp"
+                            android:layout_height="28dp"
+                            android:src="@drawable/ic_rating_star_filled" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/global_avg_rating_home_fragment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginHorizontal="12dp"
+                        android:text="4.7"
+                        android:textColor="@color/title"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/review_count_home_fragment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginBottom="2dp"
+                        android:text="10,643 reviews"
+                        android:textColor="@color/body"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/reviews_recycler_view_home_fragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="12dp"
+                    android:layout_marginTop="24dp"
+                    android:orientation="vertical"
+                    tools:listitem="@layout/item_review" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

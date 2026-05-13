@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/lyt_rounded_top"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="60dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="24dp"
+        android:background="@color/divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dialogTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="New Trip"
+            android:textColor="@color/title"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:hint="Trip Name"
+            android:textColorHint="@color/text_input_hint"
+            app:boxStrokeColor="@color/text_input_stroke"
+            app:cursorColor="?attr/customColorPrimary"
+            app:hintTextColor="@color/text_input_hint">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_text_name_edit_trip_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="@color/text_input"
+                android:textColorHint="@color/text_input_hint" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="Date Range"
+            android:textColorHint="@color/text_input_hint"
+            app:boxStrokeColor="@color/text_input_stroke"
+            app:cursorColor="?attr/customColorPrimary"
+            app:hintTextColor="@color/text_input_hint"
+            app:startIconDrawable="@drawable/ic_calendar"
+            app:startIconTint="@color/text_input_hint">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editStartDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="false"
+                android:inputType="none"
+                android:textColor="@color/text_input"
+                android:textColorHint="@color/text_input_hint" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/save_new_trip_btn"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="36dp"
+        android:backgroundTint="?attr/customColorPrimary"
+        android:elevation="3dp"
+        android:paddingVertical="12dp"
+        android:text="Start Journey"
+        android:textColor="@color/on_primary"
+        android:textSize="14sp"
+        app:cornerRadius="16dp"
+        app:strokeWidth="0dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/cancel_new_trip_btn"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/background"
+        android:elevation="3dp"
+        android:paddingVertical="12dp"
+        android:text="Cancel"
+        android:textColor="@color/title"
+        android:textSize="14sp"
+        app:cornerRadius="16dp"
+        app:strokeWidth="0dp" />
+
+</LinearLayout>
