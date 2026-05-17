@@ -111,7 +111,7 @@ class AuthActivity : AppCompatActivity() {
         val signInIntent = AuthUI.getInstance()
             .createSignInIntentBuilder()
             .setAvailableProviders(providers)
-            .setLogo(R.drawable.logo_splash)
+            .setLogo(R.drawable.logo_auth)
             .setCredentialManagerEnabled(false)
             .setTheme(R.style.Theme_Astryx_Auth)
             .build()
